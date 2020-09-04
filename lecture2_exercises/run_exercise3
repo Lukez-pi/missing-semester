@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+i=0
+execution_status=0
+while [ $execution_status -eq 0 ]; do
+    ./exercise3 >/dev/null
+    execution_status=$?
+    i=$((i+1))
+done
+echo "the total number of iterations were $i"
